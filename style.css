@@ -299,4 +299,8 @@ code[class*=language-] {
     width: 200px;
     height: 200px;
   }
+
+  .cartoon {
+    width: 450;
+  }
 } 
