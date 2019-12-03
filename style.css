@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'League Script';
+  font-size: 150px;
+  font-weight: 100;
+  text-shadow: 2px 3px 2px #cfcfcff3;
+}
+
+h2 {
+  font-family: 'League Script';
+  font-size: 65px;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: 2px 3px 2px #cfcfcff3;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.hero {
+  min-height: 95vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.hero:nth-child(1) {
+  height: 75vh;
+  padding-top: 100px;
+}
+
+.half {
+  width: 45%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+}
+
+.third {
+  height: 80%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.third img {
+  height: 80px;
+}
+
+.community {
+  justify-content: center;
+}
+
+.square img {
+  height: 80%;
+}
+
+a img:hover {
+  transform: scale(1.1); 
+}
+
+.grid {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.quarter {
+  height: 100%;
+  width: 24%;
+  display: flex;
+}
+
+.skill {
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+}
+
+.skill i {
+  text-align: center; 
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.skill p {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.projects-banner {
+  height: 80vh;
+  width: 90vw;
+  display: flex;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.project {
+  height: 100%;
+  margin: 30px;
+  background-color: rgba(234, 228, 247, 0.87);
+  width: 550px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.screenshot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.projects-banner:nth-of-type(2) .project {
+  background-color: rgb(253, 253, 205);
+}
+
+.project:first-child {
+  background-color: white !important; 
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.project:first-child h3 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-weight: 100;
+  margin: 10px 0px;
+}
+
+.arrow-wrapper {
+  transform: translate(-50%,-50%);
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 9px;
+  background-color: black;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  animation: arrow 700ms linear infinite;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 9px;
+  top: -12px;
+  right: -8px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 9px;
+  top: 12px;
+  right: -8px;
+  background-color: black;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
+
+.project-screenshot {
+  height: 45%;
+}
+
+pre[class*="language-"] {
+  background: transparent;
+  page-break-inside: avoid;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  height: 600px;
+  padding: 20px;
+}
+
+code[class*=language-] {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.project-github {
+  height: 60px;
+}
+
+.about {
+  flex-direction: column;
+  padding: 30px;
+}
+
+.text {
+  line-height: 30px;
+}
+
+.text a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.clip-circle {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+  div.hero:nth-child(3), div.hero:nth-child(4), .text {
+    display: none;
+  }
+
+  h2 {
+  font-size: 55px;
+}
+
+  .half {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .third {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .clip-circle {
+    margin-top: -190px;
+    width: 200px;
+    height: 200px;
+  }
+} 
