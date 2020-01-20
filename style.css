@@ -273,9 +273,17 @@ code[class*=language-] {
   display: none !important;
 }
 
+/* TABLET */
+
+@media only screen and (max-width: 1100px) {
+  .skill:nth-child(4), .skill:nth-child(5), .skill:nth-child(6) {
+    display: none;
+  }
+} 
+
 /* MOBILE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   div.hero:nth-child(3), div.hero:nth-child(4), .text {
     display: none;
   }

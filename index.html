@@ -87,7 +87,7 @@
     <div class="hero">
       <div class="banner">
         <div class="third">
-          <img src="https://pbs.twimg.com/profile_images/914809291567255553/zFv2_bk4_400x400.jpg" alt="Code First Girls Logo">
+          <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQESyNXLJic6Gg/company-logo_200_200/0?e=2159024400&v=beta&t=N9lduvsV6bTkUupebVxLZuIS8bttUzpP8D0fJDzLL4w" alt="Code First Girls Logo">
           <h3>Mentor</h3>
           <p>Web Development</p>
           
@@ -232,6 +232,56 @@
           </div>
           <div class="project">
             <div class="screenshot">
+              <img class="project-screenshot" src="portfolio-assets/nws.png" alt="NWS app screenshot">
+              <p>React, React testing library </p>
+              <a href="https://github.com/MiaLearnsToCode/nws-app">
+                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
+              </a>
+            </div>
+            <div class="snippet hide">
+              <pre>
+                <code class="language-javascript"> 
+const [articles, setData] = useState([]);
+
+useEffect(() => {
+
+  //if a function is called twice with the same arguments, it will return the same cached value the second time.
+  const memoize = (method) => {
+    //I'm caching the promise returned by the method, not the final value. 
+    //SO I don’t need to wait for the async method to return anything, before we cache it’s future value.
+    return async function () {
+      let cache = {};
+      let args = JSON.stringify(arguments);
+      cache[args] = cache[args] || method.apply(this, arguments);
+      return cache[args];
+    };
+  }
+
+  // 2. Get the top headlines from the sources returned from getSourcesData
+  const getArticlesData = memoize(async (source) => {
+    ...
+  });
+
+  // 1. first I need to get the sources that may include articles with the user's choices
+  const getSourcesData = memoize(async (language, country, category) => {
+    ...
+  });
+
+  const memoizedData = memoize(async () => {
+    let sourcesArray = await getSourcesData(language, country, category);
+    return sourcesArray ? await sourcesArray.map(getArticlesData) : null ;
+  })
+
+  //After the first call, I’ll always get a cached result, even if I call one of these methods again before it has returned for the first time.
+  memoizedData();
+
+}, [category, country, language, token]);
+                </code>
+              </pre>
+            </div>
+          </div>
+          <div class="project">
+            <div class="screenshot">
               <img class="project-screenshot" src="portfolio-assets/vietgram.png" alt="Vietgram app screenshot">
               <p>React, Node.js, Express.js & MongoDB</p>
               <a href="https://github.com/MiaLearnsToCode/vietgram">
@@ -240,7 +290,7 @@
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 function showRoute(req, res, next) {
   req.body.user = req.currentUser
   const lang = req.currentUser.lang === 'vi' ? 'en-vi' : 'vi-en'
@@ -266,8 +316,8 @@ function showRoute(req, res, next) {
   })
   .catch(next)
 }
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
           <div class="project">
@@ -280,7 +330,7 @@ function showRoute(req, res, next) {
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 # Colors route: generate only
 @api.route('/images/<int:image_id>/colors', methods=['POST'])
 @secure_route
@@ -317,8 +367,8 @@ def generate_colors(image_id):
     color.save()
 
   return image_schema.jsonify(image_created), 202
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
           <div class="project">
@@ -331,7 +381,7 @@ def generate_colors(image_id):
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 getAnnouncement = async () => {
   try {
     const res = await axios.get(`/api/families/${this.props.match.params.familyId}/announcements/${this.props.match.params.id}`, {
@@ -342,8 +392,8 @@ getAnnouncement = async () => {
     this.props.history.push('/error')
   }
 }
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
         </div>
@@ -367,7 +417,7 @@ getAnnouncement = async () => {
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 // This is the function that draws the hammer on the right hand wrist 'keypoint' of the player
 function drawKeypoints(keypoints, minConfidence, ctx, scale = 1) {
     const rightWrist = keypoints.find(point => point.part === 'rightWrist')
@@ -382,8 +432,8 @@ function drawKeypoints(keypoints, minConfidence, ctx, scale = 1) {
       checkCollision(x, y, xMole, yMole)
     }
   }
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
           <div class="project">
@@ -396,7 +446,7 @@ function drawKeypoints(keypoints, minConfidence, ctx, scale = 1) {
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 getLayerData() {
     const moves = this.state.moves + 1
     this.setState({ moves })
@@ -414,8 +464,8 @@ getLayerData() {
       this.props.history.push('/end')
     }
   }
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
           <div class="project">
@@ -428,7 +478,7 @@ getLayerData() {
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 //FUNCTION THAT CONTROLS THE WIN CONDITIONS FOR THE PRESSURE MODE
 function decrement() {
   timer -= 1
@@ -453,8 +503,8 @@ function decrement() {
 function countdown() {
   interval = setInterval(decrement, 1000)
 }
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
           <div class="project">
@@ -467,7 +517,7 @@ function countdown() {
             </div>
             <div class="snippet hide">
               <pre>
-                                <code class="language-javascript"> 
+                <code class="language-javascript"> 
 for (let i = 0; i < width; i++) { 
   //ARRAY OF THE DEFEND FUNCTIONS WHICH VARY FOR EACH COLUMN
   const defendFunctions=[defendColumnZero, defendColumnOne, defendColumnTwo,
@@ -527,8 +577,8 @@ for (let i = 0; i < width; i++) {
     check(checkArrays[i])
   }
 }
-                                </code>
-                              </pre>
+                </code>
+              </pre>
             </div>
           </div>
         </div>
