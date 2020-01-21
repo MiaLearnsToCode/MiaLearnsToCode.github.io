@@ -275,7 +275,7 @@ code[class*=language-] {
 
 /* TABLET */
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1350px) {
   .skill:nth-child(4), .skill:nth-child(5), .skill:nth-child(6) {
     display: none;
   }
@@ -283,7 +283,7 @@ code[class*=language-] {
 
 /* MOBILE */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
   div.hero:nth-child(3), div.hero:nth-child(4), .text {
     display: none;
   }
