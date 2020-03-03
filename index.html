@@ -1,621 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=League+Script|Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
 
-  <!-- code styling -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+  <head>
+    <title>Mia's Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- icons for skills -->
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- import the webpage's stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-  
+    <!-- import the webpage's javascript file -->
+    <script src="https://kit.fontawesome.com/49779969a6.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="dino.css">
-  <link rel="stylesheet" href="penguin.css">
-
-  <script src="app.js"></script>
-  <title>Mia's Portfolio</title>
-</head>
-<body>
-  <main>
-    <!-- header -->
-    <div class="hero">
-      <div class="half">
-        <div class="cartoon">
-          <div class="crest crest-one"></div>
-          <div class="crest crest-two"></div>
-          <div class="crest crest-three"></div>
-          <div class="crest crest-four"></div>
-          <div class="crest crest-five"></div>
-          <div class="head"></div>
-          <div class="eye eye-one"></div>
-          <div class="eye eye-two"></div>
-          <div class="closed-eye eye-one"></div>
-          <div class="closed-eye eye-two"></div>
-          <div class="pupil pupil-one"></div>
-          <div class="pupil pupil-two"></div>
-          <div class="cheek cheek-one"></div>
-          <div class="cheek cheek-two"></div>
-          <div class="smile"></div>
-          <div class="tail"></div>
-          <div class="body"></div>
-          <div class="hand hand-one"></div>
-          <div class="hand hand-two"></div>
-          <div class="sliding-background"></div>
-        </div>
+  <body ondragstart="return false">
+    <main ondragstart="return false">
+      <div class="notification">
+        <button id="close-notification">X</button>
+        <span>Just popping in to say thank you for vising, use the click wheel and/or the buttons to navigate the screen and the play button to open links. Enjoy!</span>
       </div>
-      <div class="third">
-        <h1>mia.</h1>
-      </div>
-    </div>
-
-    <!-- links -->
-    <div class="hero">
-      <div class="banner">
-        <div class="third">
-          <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQESyNXLJic6Gg/company-logo_200_200/0?e=2159024400&v=beta&t=N9lduvsV6bTkUupebVxLZuIS8bttUzpP8D0fJDzLL4w" alt="Code First Girls Logo">
-          <h3>Mentor</h3>
-          <p>Web Development</p>
-          
-        </div>
-        <div class="third">
-          <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/3423/s200/general-assembly-reviews-logo.jpg" alt="General Assembly Logo">
-          <h3>Teaching Assistant</h3>
-          <p>Software Engineering</p>
-          
-        </div>
-        <div class="third">
-          <img src="https://images.squarespace-cdn.com/content/5221d11de4b0bc8ec5308e49/1548260588041-DXX6NF6G5WMX5BJEPGS1/ggm_logo.png?content-type=image%2Fpng" alt="Girl Geek Meetup Logo">
-          <h3>Speaker</h3>
-          <p>Creative Technologies</p>
-          
-        </div>
-      </div>
-      <div class="banner">
-        <div class="third community">
-          <h2>community ...</h2>
-        </div>
-        <div class="third grid">
-          <div class="square">
-            <a href="https://github.com/MiaLearnsToCode">
-              <img src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-            </a>
-          </div>
-          <div class="square">
-            <a href="https://glitch.com/@MiaLearnsToCode">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJ52-ZicRuNIEXOhWfLAtbpGntw7BZM-IAJbCKs6w5a8WPE4q&s"
-                alt="Glitch Logo">
-            </a>
-          </div>
-          <div class="square">
-            <a href="https://dev.to/miameroi">
-              <img src="https://cdn.worldvectorlogo.com/logos/devto.svg" alt="Dev Logo">
-            </a>
-          </div>
-          <div class="square">
-            <a href="https://twitter.com/MiaMeroi">
-              <img src="https://svgur.com/i/BW3.svg" alt="Twitter Logo">
-            </a>
-          </div>
-        </div>
-        <div class="third community">
-          <h2>... driven</h2>
-        </div>
-      </div>
-    </div>
-
-    <!-- skills -->
-    <div class="hero">
-      <div class="quarter grid">
-        <div class="skill react">
-          <i class="devicon-react-original"></i>
-          <p>React</p>
-        </div>
-        <div class="skill frame">
-          <i class="devicon-webpack-plain"></i>
-          <p>Webpack</p>
-        </div>
-        <div class="skill sass">
-          <i class="devicon-sass-original"></i>
-          <p>SASS</p>
-        </div>
-        <div class="skill html">
-          <i class="devicon-html5-plain"></i>
-          <p>HTML5</p>
-        </div>
-        <div class="skill css">
-          <i class="devicon-css3-plain"></i>
-          <p>CSS3</p>
-        </div> 
-        <div class="skill js">
-          <i class="devicon-javascript-plain"></i>
-          <p>JavaScript</p>
-        </div>
-        
-      </div>
-      <div class="half">
-        <div class="cartoon">
-          <div class="head p-head"></div>
-          <div class="eye p-eye-one"></div>
-          <div class="eye p-eye-two"></div>
-          <div class="closed-eye p-eye-one"></div>
-          <div class="closed-eye p-eye-two"></div>
-          <div class="pupil p-pupil-one"></div>
-          <div class="pupil p-pupil-two"></div>
-          <div class="cheek p-cheek-one"></div>
-          <div class="cheek p-cheek-two"></div>
-          <div class="beak"></div>
-          <div class="body p-body"></div>
-          <div class="belly"></div>
-          <div class="hand wing wing-one"></div>
-          <div class="hand wing wing-two"></div>
-          <div class="feet feet-one"></div>
-          <div class="feet feet-two"></div>
-          <div class="sliding-background sliding-bk-png"></div>
-        </div>
-      </div>
-      <div class="quarter grid">
-        <div class="skill node">
-          <i class="devicon-nodejs-plain"></i>
-          <p>Node.js</p>
-        </div>
-        <div class="skill express">
-          <i class="devicon-express-original"></i>
-          <p>Express.js</p>
-        </div>
-        <div class="skill python">
-          <i class="devicon-python-plain"></i>
-          <p>Python</p>
-        </div>
-        <div class="skill mocha">
-          <i class="devicon-mocha-plain"></i>
-          <p>Mocha</p>
-        </div>
-        <div class="skill mongo">
-          <i class="devicon-mongodb-plain"></i>
-          <p>MongoDB</p>
-        </div>
-        <div class="skill postgres">
-          <i class="devicon-postgresql-plain"></i>
-          <p>PostgreSQL</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- projects -->
-    <div class="hero">
-      <div>
-        <h2>My favourite projects ...</h2>
-        <div class="projects-banner">
-          <div class="project">
-            <div class="arrow-wrapper">
-              <div class="arrow"></div>
+      <div role="application" class="wrapper">
+        <div id="ipod" class="ipod-grey">
+          <div class="screen">
+            <div class="half menu">
+              <div class="menu-row grey-nav">
+                <div>
+                  <p>Mia</p>
+                </div>
+                <div>
+                  <i class="fas fa-play"></i>
+                  <div class="battery"></div>
+                </div>
+              </div>
+              <div class="menu-row choice-row">
+                <p>
+                  About Me
+                </p>
+              </div>
+              <div class="menu-row choice-row">
+                <p>
+                  Skills
+                </p>
+              </div>
+              <div class="menu-row choice-row">
+                <p>
+                  Projects
+                </p>
+              </div>
+              <div class="menu-row choice-row">
+                <p>
+                  Contact Me
+                </p>
+              </div>
             </div>
-            <h3>This way</h3>
-            <h3>for web apps</h3>
-            <p>Click on the images to</p>
-            <p>view a code snippet</p>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/nws.png" alt="NWS app screenshot">
-              <p>React, React testing library </p>
-              <a href="https://github.com/MiaLearnsToCode/nws-app">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-const [articles, setData] = useState([]);
+            <div class="half content">
 
-useEffect(() => {
-
-  //if a function is called twice with the same arguments, it will return the same cached value the second time.
-  const memoize = (method) => {
-    //I'm caching the promise returned by the method, not the final value. 
-    //SO I don’t need to wait for the async method to return anything, before we cache it’s future value.
-    return async function () {
-      let cache = {};
-      let args = JSON.stringify(arguments);
-      cache[args] = cache[args] || method.apply(this, arguments);
-      return cache[args];
-    };
-  }
-
-  // 2. Get the top headlines from the sources returned from getSourcesData
-  const getArticlesData = memoize(async (source) => {
-    ...
-  });
-
-  // 1. first I need to get the sources that may include articles with the user's choices
-  const getSourcesData = memoize(async (language, country, category) => {
-    ...
-  });
-
-  const memoizedData = memoize(async () => {
-    let sourcesArray = await getSourcesData(language, country, category);
-    return sourcesArray ? await sourcesArray.map(getArticlesData) : null ;
-  })
-
-  //After the first call, I’ll always get a cached result, even if I call one of these methods again before it has returned for the first time.
-  memoizedData();
-
-}, [category, country, language, token]);
-                </code>
-              </pre>
             </div>
           </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/vietgram.png" alt="Vietgram app screenshot">
-              <p>React, Node.js, Express.js & MongoDB</p>
-              <a href="https://github.com/MiaLearnsToCode/vietgram">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-function showRoute(req, res, next) {
-  req.body.user = req.currentUser
-  const lang = req.currentUser.lang === 'vi' ? 'en-vi' : 'vi-en'
-  Chat
-    .findById(req.params.chatId)
-    .populate('user')
-    .populate('comments.user')
-    .then(chat => {
-      if (!chat) throw new Error('Not Found')
-      
-      //PROMISE WHICH TAKES THE TEXT INSIDE EACH MESSAGE AND TRANSLATES IT ACCORDINGLY TO THE USER'S LANGUAGE
-      return Promise.all([chat, ...chat.comments.map(comment => {
-      return axios.get(encodeURI(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${key}&text=${comment.text}&lang=${lang}`))
-    })])
-  })
-  .then(values => {
-    //USE THE NEW TRANSLATED TEXT AS THE COMMENT TEXT
-    const [ chat, ...comments ] = values
-    chat.comments.forEach((comment, index) => {
-      comment.text = comments[index].data.text[0]
-    })
-    res.json(chat)
-  })
-  .catch(next)
-}
-                </code>
-              </pre>
-            </div>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/yarn.png" alt="Yarn app screenshot">
-              <p>React, Python, Flask & PostgreSQL</p>
-              <a href="https://github.com/MiaLearnsToCode/yarn">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-# Colors route: generate only
-@api.route('/images/<int:image_id>/colors', methods=['POST'])
-@secure_route
-def generate_colors(image_id):
-  image_created = ImageModel.query.get(image_id)
-  if not image_created:
-    return jsonify({'message':'Image not found'}), 404
-  if image_created.user != g.current_user:
-    return jsonify({'message': 'Unauthorized'}), 401
-  # set the url and pixel size
-  url = image_created.url
-  pixelSize = image_created.difficulty.pixelSize
 
-  # manipulate the image
-  image = image_manipulation(url, pixelSize)
-
-  colors_list = create_colors(image)
-
-  # stitches count for each color
-  stitches_count = [color_tuple[0] for color_tuple in colors_list]
-
-  # length (in mm) of yarn needed for each color
-  color_length = [color_tuple[0]*2.5 for color_tuple in colors_list]
-
-  # list of the rgb colors needed for the project
-  colors_list = [str(rgb_to_hex(color_tuple[1])) for color_tuple in colors_list]
-
-  for stitch in stitches_count:
-    i = stitches_count.index(stitch)
-    color, errors = color_schema.load({'stitches':stitch, 'length': color_length[i], 'color': colors_list[i]})
-    if errors:
-      return jsonify(errors), 422
-    color.image = image_created
-    color.save()
-
-  return image_schema.jsonify(image_created), 202
-                </code>
-              </pre>
+          <div id="wheel" class="round-outer">
+            <div class="row row-one">
+              <button id="menu-button">
+                MENU
+              </button>
             </div>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/clanconnect.png" alt="Clan Connect app screenshot">
-              <p>React, Node.js, Express.js & MongoDB</p>
-              <a href="https://github.com/MiaLearnsToCode/clan-connect">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
+            <div class="row row-two">
+              <button class="fast-backward">
+                <i class="fas fa-fast-backward"></i>
+              </button>
+              <div id="ok-button" class="round-inner"></div>
+              <button class="fast-forward">
+                <i class="fas fa-fast-forward"></i>
+              </button>
             </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-getAnnouncement = async () => {
-  try {
-    const res = await axios.get(`/api/families/${this.props.match.params.familyId}/announcements/${this.props.match.params.id}`, {
-    headers: { Authorization: `Bearer ${Auth.getToken()}` }
-    })
-    this.setState({ announcement: res.data })
-  } catch {
-    this.props.history.push('/error')
-  }
-}
-                </code>
-              </pre>
-            </div>
-          </div>
-        </div>
-        <div class="projects-banner">
-          <div class="project">
-            <div class="arrow-wrapper">
-              <div class="arrow"></div>
-            </div>
-            <h3>This way</h3>
-            <h3>for games</h3>
-            <p>Click on the images to</p>
-            <p>view a code snippet</p>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/whac.png" alt="Whac-a-mole game screenshot">
-              <p>JavaScript, Tensorflow.js & PoseNet</p>
-              <a href="https://github.com/MiaLearnsToCode/whac-a-mole">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-// This is the function that draws the hammer on the right hand wrist 'keypoint' of the player
-function drawKeypoints(keypoints, minConfidence, ctx, scale = 1) {
-    const rightWrist = keypoints.find(point => point.part === 'rightWrist')
-    const imageRight = document.querySelector('#right')
-    
-    if (rightWrist.score > minConfidence) {
-      const { y, x } = rightWrist.position
-      // renaming mole coordinates to avoid confusion with wrist one..
-      const xMole = moleCoordinates[hole]['x']
-      const yMole = moleCoordinates[hole]['y']
-      drawPoint(ctx, y * scale, x * scale, 10, imageRight)
-      checkCollision(x, y, xMole, yMole)
-    }
-  }
-                </code>
-              </pre>
-            </div>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/mapbox.png" alt="Mapbox game screenshot">
-              <p>React & Mapbox API</p>
-              <a href="https://github.com/MiaLearnsToCode/mapbox-playground">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-getLayerData() {
-    const moves = this.state.moves + 1
-    this.setState({ moves })
-
-    if (this.state.firstBarHeight > 0 && this.state.secondBarHeight > 0 && moves % 300 === 0) {
-      axios.get(`https://api.mapbox.com/v4/mapbox.mapbox-streets-v8/tilequery/${this.state.viewport.longitude},${this.state.viewport.latitude}.json?radius=100&layers=poi_label&access_token=${token}`)
-        .then(res => {
-          const lastLayer = res.data.features[0]
-          const firstBarHeight = this.state.firstBarHeight - 5
-          const secondBarHeight = this.state.secondBarHeight - 5
-          this.setState({ layer: lastLayer.properties.type, firstBarHeight, secondBarHeight })
-        })
-        .catch(() => this.setState({ layer: '' }))
-    } else if (this.state.firstBarHeight === 0 && this.state.secondBarHeight === 0) {
-      this.props.history.push('/end')
-    }
-  }
-                </code>
-              </pre>
-            </div>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/candycrush.png" alt="Candy Crush game screenshot">
-              <p>HTML, CSS & JavaScript</p>
-              <a href="https://github.com/MiaLearnsToCode/candy-crush">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-//FUNCTION THAT CONTROLS THE WIN CONDITIONS FOR THE PRESSURE MODE
-function decrement() {
-  timer -= 1
-  timeKeeper.innerHTML = `00:${timer}`
-  if (timer === 0) {
-    clearInterval(interval)
-    grid.style.display = 'none'
-    if (score > 1500) {
-      timeKeeper.innerHTML = 'Congrats, you won! 🎉'
-      //CHECK THE SCORE AGAINST THE HIGH SCORE SAVED IN LOCAL STORAGE
-      if (score > highScorePressure) {
-        localStorage.setItem('highScorePressure', score)
-      }
-    } else {
-      timeKeeper.innerHTML = 'You ran out of time 🥵'
-    }
-    clearGrid()
-    modeChoice.style.display = 'block'
-  }
-}
-
-function countdown() {
-  interval = setInterval(decrement, 1000)
-}
-                </code>
-              </pre>
-            </div>
-          </div>
-          <div class="project">
-            <div class="screenshot">
-              <img class="project-screenshot" src="portfolio-assets/connectfour.png" alt="Connect Four game screenshot">
-              <p>HTML, CSS & JavaScript</p>
-              <a href="https://github.com/MiaLearnsToCode/connect-four">
-                <img class="project-github" src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="GitHub Logo">
-              </a>
-            </div>
-            <div class="snippet hide">
-              <pre>
-                <code class="language-javascript"> 
-for (let i = 0; i < width; i++) { 
-  //ARRAY OF THE DEFEND FUNCTIONS WHICH VARY FOR EACH COLUMN
-  const defendFunctions=[defendColumnZero, defendColumnOne, defendColumnTwo,
-  defendColumnThree, defendColumnFour, defendColumnFive, defendColumnSix] 
-  
-  //HIERARCHY OF COLUMNS FOR STRATEGIC CHECKING
-  const checkArrays=[[1,2,3,4,5,6],
-  [0,2,3,4,5,6], [1,3,0,4,5,6], [2,4,1,5,0,6], [3,5,2,6,1,0], [6,4,3,2,1,0], [5,4,3,2,1,0]] 
-  
-  //IF STATEMENT WHICH ALLOWS THE PAYERS TO MAKE A MOVE
-  if (circleIndex===i) { 
-    //ARRAY OF THE AVAILABLE CIRCLES IN EACH COLUMN
-    const availableArray=[availableZero, availableOne, availableTwo, availableThree, availableFour, availableFive, availableSix]
-
-  const column = columns[i] 
-  const available = availableArray[i] 
-
-  // PLAY SPONGEBOB 
-  column[available].classList.add('spongebob')
-  playedCircles.unshift(column[available]) 
-
-  //CHECK IF SPONGEBOB WON
-  checkForWin('spongebob') 
-  column.pop() 
-  availableArray[i]=column.length - 1 
-
-  // SQUIDWARD'S TURN
-  playSquidward = true 
-  const randomIndex = Math.floor(Math.random() * 3) 
-  
-  //LOGIC TO CHECK WHERE SQUIDWARD (THE COMPUTER) SHOULD PLAY
-  if (playSquidward) { 
-    if (available> 0) {
-      defendFunctions[i]()
-      if(playSquidward) {
-        switch(randomIndex) {
-          case 0:
-            if (availableArray[i - 1] > 0) {
-              playColumn(i - 1)
-            } else {
-              check(checkArrays[i - 1])
-            }
-            break
-          case 1:
-            playSelf(i)
-            break
-          case 2:
-            if (availableArray[i + 1] > 0) {
-              playColumn(i + 1)
-            } else {
-              check(checkArrays[i + 1])
-            }
-          break
-      }
-    }
-  } else {
-    check(checkArrays[i])
-  }
-}
-                </code>
-              </pre>
+            <div class="row row-three">
+              <button id="play-button">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-     
-    </div>
+    </main>
+  </body>
 
-    <!-- about -->
-    <div class="hero">
-      <div class="half about">
-        <img src="portfolio-assets/profile.png" alt="Profile Picture" class="clip-circle">
-        <div class="text">
-          <p>Previous to my career change, I was the Community Builder at <a href="http://techhub.com/">TechHub</a> - the
-            largest community of tech entrepreneurs and startups in London. </p>
-          <p> One of the initiatives I started was the Tech Leads Meet-up, a themed monthly lunch gathering of fellow CTOs and
-            tech leads. It was only a matter of time before I knew that I wanted to be sat on the opposite side of the table. </p>
-          <p> I decided to take the leap and enroll in the <a
-              href="https://generalassemb.ly/education/software-engineering-immersive/london">General Assembly Software
-              Engineering Immersive Bootcamp</a>. I graduated in August 2019 and have been a teaching assistant on the course ever since!</p>
-        </div>
-      </div>
-      <div class="half">
-        <a class="twitter-timeline" data-width="400" data-height="600" data-link-color="#19CF86"
-          href="https://twitter.com/miameroi?ref_src=twsrc%5Etfw">Tweets by miameroi</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      
-      
-    </div>
-
-
-
-    
-    
-
-  </main>
-  
-  
-</body>
 </html>
